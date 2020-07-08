@@ -30,6 +30,7 @@ class App extends Component {
 
     refreshState() {
         console.log("CVs")
+        this.state.CVs = []
         this.state.cv_texts.map(t => {
             const row = {
                 name: t.cv_text.split("\n")[0],
